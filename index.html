@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .gallery__list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .gallery__item {
+            width: calc(95% / 2);
+        }
+        
+        .gallery__item:not(:nth-child(-n+2)) {
+            margin-top: 20px;
+        }
+        
+        .gallery__item img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .gallery__item a {
+            transition: .5s;
+        }
+        
+        .gallery__item a:hover {
+            filter: opacity(0.7);
+        }
+        
+        .gallery__item a:hover img {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="gallery">
+        <h2 class="section__title">フォトギャラリー</h2>
+        <ul class="gallery__list">
+            <li class="gallery__item">
+                <a href="https://cdn.pixabay.com/photo/2016/07/28/02/02/greece-1546902_960_720.jpg" data-lightbox="group1" data-title="1枚目の画像"><img src="https://cdn.pixabay.com/photo/2016/07/28/02/02/greece-1546902_960_720.jpg" alt=""></a>
+            </li>
+            <li class="gallery__item">
+                <a href="https://cdn.pixabay.com/photo/2019/07/14/10/48/mosel-4336787_960_720.jpg" data-lightbox="group1" data-title="2枚目の画像"><img src="https://cdn.pixabay.com/photo/2019/07/14/10/48/mosel-4336787_960_720.jpg" alt=""></a>
+            </li>
+            <li class="gallery__item">
+                <a href="https://cdn.pixabay.com/photo/2019/07/12/18/59/woman-4333420_960_720.jpg" data-lightbox="group1" data-title="3枚目の画像"><img src="https://cdn.pixabay.com/photo/2019/07/12/18/59/woman-4333420_960_720.jpg" alt=""></a>
+            </li>
+            <li class="gallery__item">
+                <a href="https://cdn.pixabay.com/photo/2019/07/15/12/10/old-tree-4339191_960_720.jpg" data-lightbox="group1" data-title="4枚目の画像"><img src="https://cdn.pixabay.com/photo/2019/07/15/12/10/old-tree-4339191_960_720.jpg" alt=""></a>
+            </li>
+        </ul>
+    </section>
+    <div class="container">
+        <h1>Hello</h1>
+        <button>送信</button>
+        <div>
+            <iframe width="300" src="https://www.youtube.com/embed/HWrryW73rnA?start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.71359310523!2d135.19176991550341!3d34.68717729144945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008ef9a769296b%3A0x8de309284741c6a8!2z44Ki44Oz44Kr44O856We5oi45LiJ5a6u!5e0!3m2!1sja!2sjp!4v1627384932787!5m2!1sja!2sjp"
+                width="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
